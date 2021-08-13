@@ -1,0 +1,5 @@
+﻿  main.cpp
+  opencl.hpp: CL_HPP_TARGET_OPENCL_VERSION is not defined. It will default to 300 (OpenCL 3.0)
+C:\Users\Lily\Documents\UNI\BA\programming\Project\source\main.cpp(183,22): warning C4154: deletion of an array expression; conversion to pointer supplied
+C:\Users\Lily\Documents\UNI\BA\programming\Project\source\main.cpp(413): warning C4715: 'get_ao4d': not all control paths return a value
+  BA.vcxproj -> C:\Users\Lily\Documents\UNI\BA\programming\Project\x64\Debug\BA.exe

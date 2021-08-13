@@ -1,0 +1,4 @@
+C:\Users\Lily\Documents\UNI\BA\project\Project\x64\Debug\BA.exe
+C:\Users\Lily\Documents\UNI\BA\project\Project\x64\Debug\BA.pdb
+C:\Users\Lily\Documents\UNI\BA\programming\Project\x64\Debug\BA.exe
+C:\Users\Lily\Documents\UNI\BA\programming\Project\x64\Debug\BA.pdb
