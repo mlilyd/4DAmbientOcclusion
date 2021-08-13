@@ -1,0 +1,4420 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\begin_preamble
+% This template was initially provided by Dulip Withanage.
+% Modifications for the database systems research group
+% were made by Conny Junghans,  Jannik Strötgen and Michael Gertz
+% Modifications for the LyX version were made by Lily Djami
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PACKAGES:
+
+% Use German :
+% Input and font encoding
+%\usepackage[utf8]{inputenc}
+% Index-generation
+\usepackage{makeidx}
+% Einbinden von URLs:
+% Special \LaTex symbols (e.g. \BibTeX):
+%\usepackage{doc}
+% Include Graphic-files:
+\usepackage{graphicx}
+% Include doc++ generated tex-files:
+%\usepackage{docxx}
+% Include PDF links
+%\usepackage[pdftex, bookmarks=true]{hyperref}
+
+% Fuer anderthalbzeiligen Textsatz
+\usepackage{setspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% OTHER SETTINGS:
+
+% Pagestyle:
+\pagestyle{headings}
+
+\sloppy
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex8
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style apacitex
+\biblatex_bibstyle iso-authoryear
+\biblatex_citestyle iso-authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\bottommargin 5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip 10bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1cm} 
+\backslash
+begin{center}  
+\backslash
+textbf{  
+\backslash
+Large Ruprecht-Karls-Universität Heidelberg
+\backslash
+
+\backslash
+ 
+\backslash
+smallskip 
+\backslash
+Large Fakultät für Mathematik und Informatik
+\backslash
+
+\backslash
+ 
+\backslash
+smallskip 
+\backslash
+Large Institut für Informatik
+\backslash
+
+\backslash
+ 
+\backslash
+smallskip }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{3cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{
+\backslash
+large Bachelor Thesis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.5
+\backslash
+baselineskip} {
+\backslash
+huge 
+\backslash
+textbf{Ambient Occlusion in 4D} } 
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill 
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large 
+\backslash
+begin{tabular}[l]{ll} Name: & Maria Regina Lily Djami
+\backslash
+
+\backslash
+ Matriculation Number: & 3347645
+\backslash
+
+\backslash
+ Instructor: & Prof.
+ Dr.
+ Filip Sadlo 
+\backslash
+
+\backslash
+ Date of Submission: & 
+\backslash
+today 
+\backslash
+end{tabular} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{100pt} 
+\backslash
+noindent Ich versichere, dass ich diese Bachelor-Arbeit selbstständig verfasst
+ und nur die angegebenen Quellen und Hilfsmittel verwendet habe und die
+ Grundsätze und Empfehlungen ``Verantwortung in der Wissenschaft'' der Universit
+ät Heidelberg beachtet wurden.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{50pt} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+noindent
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+phantom{mmmmmmmmmmmmmmmmmmmm}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Date of submission: 
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Zusammenfassung
+\end_layout
+
+\begin_layout Standard
+Datenvisualisierung ist hilfreich für die Analyse abstrakter Daten.
+ Nützliche Erkenntnisse und ein besseres Verständnis können durch Datenvisualisi
+erung gewonnen werden.
+ Forschungsdaten sind oft komplex und hochdimensional.
+ Die Visualisierung von hochdimensionalen Daten erfordert die Reduktion
+ der Dimension der Daten, damit die Daten auf ein 2D- oder 3D-Bild projiziert
+ werden können.
+ Dies führt natürlich zu einem gewissen Verlust an Informationen.
+ Durch die Projektion der Daten auf ein 4D-Bild bleiben mehr Informationen
+ erhalten.
+ Allerdings sind 4D-Strukturen nicht intuitiv zu verstehen.
+ Außerdem sind die Visualisierungsmethoden im 3D-Raum weitaus besser als
+ im 4D-Raum.
+ Die verfügbaren 3D-Grafik-Algorithmen sind in der Lage, realistische und
+ qualitativ hochwertige Bilder zu erzeugen.
+ 
+\end_layout
+
+\begin_layout Standard
+Eine Methode in der 3D-Grafik ist die Ambient Occlusion (Umgebungsverdeckung).
+ Das Ziel dieser Arbeit ist Ambient Occlusion in den 4-dimensionalen Raum
+ zu erweitern.
+ Es wurde ein direkter mathematischer Ansatz gewählt, um die punkt-basierte
+ ambient occlusion mit Raytracing im 3D-Raum auf den 4D-Raum zu erweitern.
+ Das Ergebnis ist eine 4D-Ambient-Occlusion, die in der Lage ist, volumetrische
+ Oberflächen von 4D-Strukturen zu berücksichtigen.
+\end_layout
+
+\begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+Data visualization is helpful for analyzing abstract data.
+ Useful insights and better understanding can be gained from data visualization.
+ Research data are often complex and high-dimensional.
+ Visualization of high-dimensional data requires the reduction of the data's
+ dimension so that the data can be projected to a 2D or 3D image.
+ This of course leads to some loss of information.
+ Projecting the data to a 4D image allows more information to be retained,
+ however 4D structures are not as intuitive to understand.
+ Moreover, visualization methods in 3D space is far superior than in 4D
+ space.
+ Available 3D graphics algorithms are able to produce realistic, high-quality
+ images.
+ 
+\end_layout
+
+\begin_layout Standard
+One method in 3D graphics is ambient occlusion.
+ This thesis aims to extend ambient occlusion into 4-dimensional space.
+ A direct mathematical approach was taken to extend vertex-based ray-traced
+ ambient occlusion in 3D space to 4D space.
+ This results in 4D ambient occlusion that is able to take volumetric surfaces
+ of 4D structures into consideration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+Visualization of abstract data is helpful for analyzing and understanding
+ the abstract data.
+ By representing the data visually, complex relationships can be portrayed
+ in a simple and efficient manner.
+ However, research data are often complex and high-dimensional.
+ To project such data into a 2D or 3D image, the data's dimensionality needs
+ to be reduced.
+ This leads to a loss in information.
+ Reducing the data and visualizing it not as a 3D image, but as a 4D image,
+ will allow more information to be retained in the visualization.
+ This can lead to new discovery of insights and understandings in the data.
+ Example of this can be found in the medical field, where 4D visualization
+ of medical data is becoming more popular as a tool for diagnosis and surgical
+ planning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "li2008advances"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+However, the 4D space is not as intuitively understood as 3D space.
+ As our world exists in a 3D space, it is difficult to visualize spaces
+ in higher dimensions.
+ However, scenes in 4D space can be projected to the 3D space, which allows
+ for visualization of 4D structures.
+ Despite the availability of 4D visualization methods, the methods of visualizat
+ion and rendering in 3D are still vastly more advanced than the methods
+ available in 4D.
+ Over the years, many algorithms have been developed to produce photorealistic
+ results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ganovelli2014"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+These algorithms are also being optimized, so that good results can be produced
+ without compromising computation cost.
+ Recursive global illumination using ray tracing can produce shadows, reflection
+s, and indirect lights, but it is very expensive and is not suitable for
+ real-time applications.
+ Algorithms such as ambient occlusion approximates the results of global
+ illumination, but is less expensive.
+ Ambient occlusion gives the rendered image more depth and clearer separation
+ between objects, making the image more realistic 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "arvi2018"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the rendering and visualization methods available in 3D to 4D may
+ improve the quality of 4D visualization, making it more up to par with
+ 3D visualization.
+ Rendering the 4D space with shadows and reflection can also give a better
+ understanding of the 4D space.
+ 
+\end_layout
+
+\begin_layout Section
+Objectives
+\end_layout
+
+\begin_layout Standard
+This bachelor thesis builds on preexisting algorithms for 3D rendering and
+ extend these algorithms to the 4D space.
+ More specifically, this thesis will focus on ambient occlusion.
+ The ambient occlusion method used in this thesis uses ray tracing to calculate
+ the occlusion values of each vertex in a scene, in other words vertex-based
+ ray traced ambient occlusion.
+ To view the result of the ambient occlusion, the ambient occlusion value
+ will be used to determine the color of the geometries.
+\end_layout
+
+\begin_layout Standard
+To extend the preexisting algorithms into 4D space, an direct analytical
+ approach was taken.
+ The mathematical concepts behind the algorithms are discussed in detail.
+ Then, the same concepts are then applied in 4D space.
+ 
+\end_layout
+
+\begin_layout Section
+Structure
+\end_layout
+
+\begin_layout Standard
+In Chapter 2 we discuss the classic ray tracing and ambient occlusion methods
+ in 3D.
+ Chapter 3 introduces other related works regarding ambient occlusion and
+ 4D visualization.
+ In Chapter 4, methods used to extend ambient occlusion into 4D are presented.
+ Implementation details are discussed in this chapter as well.
+ Experimental results of ambient occlusion in 4D are then presented and
+ discussed in Chapter 5.
+ Finally, Chapter 6 gives a conclusion of the thesis.
+\end_layout
+
+\begin_layout Chapter
+Fundamentals
+\end_layout
+
+\begin_layout Standard
+This chapter discusses the basic rendering algorithm ray tracing in detail.
+ Important concepts in computer graphics, such as ray generation and ray-object
+ intersection are likewise presented.
+ This chapter also discusses the classic ambient occlusion algorithm in
+ 3D.
+\end_layout
+
+\begin_layout Section
+Ray Tracing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/0018_001.png
+	width 15cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An illustration of ray tracing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ganovelli2014"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "raytracingillust"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To display a 3D scene, a rendering algorithm such as 
+\emph on
+ray tracing
+\emph default
+ is needed.
+ Ray tracing simulates the mechanics of how our eyes see.
+ Our eyes can see the world around us because light rays from light sources
+ travel across space into our eyes.
+ However, instead of starting at the light source and following the path
+ of the light rays into the eye, ray tracing shoot rays from the eye (viewpoint,
+ or camera) through the image plane and into the scene.
+ We then trace the path of shot rays through the 3D scene.
+ If a ray reaches a light source, we can then compute the color of this
+ ray based on its path through the 3D scene 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shirley2018"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+for each pixel in image: 	
+\end_layout
+
+\begin_layout Plain Layout
+
+  create a ray from viewpoint through the pixel image plane	
+\end_layout
+
+\begin_layout Plain Layout
+
+  find closest ray-object intersection 	
+\end_layout
+
+\begin_layout Plain Layout
+
+  compute color of pixel according to the path of the ray
+\end_layout
+
+\begin_layout Plain Layout
+
+  set pixel color to computed value
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A pseudocode of ray tracing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shirley2018"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "raytracealgo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+ray
+\emph default
+ 
+\begin_inset Formula $R=(O,Dir)$
+\end_inset
+
+ consists of a point of origin 
+\begin_inset Formula $O$
+\end_inset
+
+ and a directional vector 
+\begin_inset Formula $Dir$
+\end_inset
+
+.
+ A ray from the viewpoint through the pixel image plane 
+\begin_inset Formula $s$
+\end_inset
+
+ has its origin 
+\begin_inset Formula $O$
+\end_inset
+
+ at the location of the viewpoint.
+ Its directional vector is defined as 
+\begin_inset Formula $Dir=s-e$
+\end_inset
+
+.
+ To find a point 
+\begin_inset Formula $P$
+\end_inset
+
+ on a ray 
+\begin_inset Formula $R$
+\end_inset
+
+, we use the the parametric line equation in 3D, which is given by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P(t)=O+tDir\label{eq:pointonray}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $t$
+\end_inset
+
+ is the distance from the origin 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ Using this equation, we can find any point 
+\begin_inset Formula $p$
+\end_inset
+
+ on a ray given a distance 
+\begin_inset Formula $t$
+\end_inset
+
+ from the viewpoint 
+\begin_inset Formula $O$
+\end_inset
+
+.
+ It is important to note that 
+\begin_inset Formula $P=e$
+\end_inset
+
+ at 
+\begin_inset Formula $t=0$
+\end_inset
+
+, and 
+\begin_inset Formula $P=s$
+\end_inset
+
+ at 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ More generally, for 
+\begin_inset Formula $0<t_{1}<t_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $P(t_{1})$
+\end_inset
+
+ is closer to the viewpoint than 
+\begin_inset Formula $P(t_{2})$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $t<0$
+\end_inset
+
+, 
+\begin_inset Formula $P(t)$
+\end_inset
+
+ is located behind the viewport.
+ These characteristics of 
+\begin_inset Formula $t$
+\end_inset
+
+ are important when calculating the closest object that intersects the ray
+ that is not behind the viewport 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shirley2018"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Ray-Generation"
+
+\end_inset
+
+Ray Generation
+\end_layout
+
+\begin_layout Standard
+To render an image, we must first create an image plane.
+ The image plane represents the computer screen on which the image is to
+ be rendered.
+ The image plane is divided into a grid, as illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "raytracingillust"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ One section of the grid represents one pixel on the computer screen.
+ As described in Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "raytracealgo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we need to generate rays which start at the viewpoint and go through each
+ pixel.
+ In other words, these rays go through each section of the grid on the image
+ plane.
+ 
+\end_layout
+
+\begin_layout Standard
+As we previously defined, a ray consists of a point of origin 
+\begin_inset Formula $O$
+\end_inset
+
+ and a directional vector 
+\begin_inset Formula $Dir$
+\end_inset
+
+.
+ The origin 
+\begin_inset Formula $O$
+\end_inset
+
+ of this ray is user-defined as the viewpoint.
+ The directional vector 
+\begin_inset Formula $Dir$
+\end_inset
+
+ of this ray needs to be calculated.
+ We have defined the directional vector 
+\begin_inset Formula $Dir$
+\end_inset
+
+ as the difference between the viewpoint 
+\begin_inset Formula $e$
+\end_inset
+
+ and a point 
+\begin_inset Formula $s$
+\end_inset
+
+ on the image plane 
+\begin_inset Formula $Dir=s-e$
+\end_inset
+
+.
+ Thus, the problem of generating rays that go through the image plane is
+ a problem of finding points 
+\begin_inset Formula $s$
+\end_inset
+
+ on the image plane 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shirley2018"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since the image plane is divided into grids, we can think of this as a coordinat
+e system.
+ This coordinate system is also known as the 
+\emph on
+pixel coordinates
+\emph default
+.
+ It has a range of 
+\begin_inset Formula $[0,w]$
+\end_inset
+
+ along the 
+\begin_inset Formula $x$
+\end_inset
+
+-axis, and 
+\begin_inset Formula $[0,h]$
+\end_inset
+
+ along the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis, with 
+\begin_inset Formula $w$
+\end_inset
+
+ being the width of the image, and 
+\begin_inset Formula $h$
+\end_inset
+
+ the height of the image.
+ We can easily identify a point 
+\begin_inset Formula $s_{P}=(x,y)$
+\end_inset
+
+ on the image plane, which is also the center of each pixel on this coordinate
+ system 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "akeley2013"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In order to generate a ray to point 
+\begin_inset Formula $s_{P}$
+\end_inset
+
+, we need to transform point 
+\begin_inset Formula $s_{P}$
+\end_inset
+
+ into the same space as the viewpoint, which is in the 
+\emph on
+camera coordinate space
+\emph default
+.
+ This takes several steps.
+ First, we need to normalize point 
+\begin_inset Formula $s$
+\end_inset
+
+ so that it is in the 
+\emph on
+normalized device space
+\emph default
+.
+ The normalized device coordinate has a range of 
+\begin_inset Formula $[0,1]$
+\end_inset
+
+ on both the x-axis and the 
+\begin_inset Formula $y$
+\end_inset
+
+-axis.
+ We can compute the normalized point 
+\begin_inset Formula $s_{N}=(x_{N},y_{N})$
+\end_inset
+
+ by dividing its 
+\begin_inset Formula $x$
+\end_inset
+
+-component with the width, and its y-component with its height.
+ Because each point is on the center of each pixel, it is offset by 0.5 to
+ the left, so we need to subtract 0.5 from both 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ after normalization 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "akeley2013"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+x_{N} & =x/w-0.5\\
+y_{N} & =y/h-0.5
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now 
+\begin_inset Formula $s_{p}$
+\end_inset
+
+ needs to be transformed into the 
+\emph on
+screen space
+\emph default
+, which has a range of [-1, 1] along its y-axis, and [-image aspect ratio,
+ image aspect ratio] along its 
+\begin_inset Formula $x$
+\end_inset
+
+-axis.
+ Notice that 
+\begin_inset Formula $y_{N}$
+\end_inset
+
+ needs to be negated because the origin (point 0,0) in the raster space
+ and the normal device coordinate space is in the top left corner, whereas
+ the origin of the screen space is in the middle of the space.
+ To map the 
+\begin_inset Formula $y$
+\end_inset
+
+-coordinate correctly, we need to negate the 
+\begin_inset Formula $y$
+\end_inset
+
+-coordinate.
+ We also need to scale the coordinate space with the aspect ratio of the
+ image.
+ To do this we need to multiply the 
+\begin_inset Formula $x$
+\end_inset
+
+-component by the image's aspect ratio 
+\begin_inset Formula $s_{x}=s_{x}\cdot(w/h)$
+\end_inset
+
+.
+ The resulting screen space coordinate of point 
+\begin_inset Formula $s$
+\end_inset
+
+ is then given as
+\begin_inset Formula 
+\[
+s_{screen}=(s_{x},-s_{y},0).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally the screen space coordinates of point 
+\begin_inset Formula $s$
+\end_inset
+
+ need to be transformed into the camera coordinate space.
+ For this, the viewing angle 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ of the viewpoint need to be considered.
+ To scale the screen coordinates with the viewing angle of the viewpoint,
+ the screen coordinates need to be multiplied with 
+\begin_inset Formula $\tan(\frac{\alpha}{2})$
+\end_inset
+
+.
+ The camera coordinates of point 
+\begin_inset Formula $s$
+\end_inset
+
+ is then given as 
+\begin_inset Formula $s_{camera}=(s_{x}\cdot\tan(\frac{\alpha}{2}),s_{y}\cdot\tan(\frac{\alpha}{2}))$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "akeley2013"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ray-Object Intersection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Ray-Object-Intersection"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A crucial step in ray tracing is finding the point at which a ray 
+\begin_inset Formula $R(O,Dir)$
+\end_inset
+
+ intersects with any object in front of the viewpoint.
+ We first solve this problem for triangles, and then use the intersection
+ with triangles to solve the ray intersection with more complex geometries.
+ To compute the ray-triangle intersections, we use the barycentric coordinates
+ of the triangle.
+\end_layout
+
+\begin_layout Standard
+The
+\series bold
+ 
+\series default
+\emph on
+barycentric coordinate system
+\emph default
+ describes the location of a point relative to a simplex, which in the case
+ of a plane is a triangle 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barycentriccoords"
+literal "false"
+
+\end_inset
+
+.
+ Given a point 
+\begin_inset Formula $P\in\mathbb{{R}}^{3}$
+\end_inset
+
+ and a triangle with vertices 
+\begin_inset Formula $A,B,C\in\mathbb{{R}}^{3}$
+\end_inset
+
+, point 
+\begin_inset Formula $p$
+\end_inset
+
+ can be represented as 
+\begin_inset Formula 
+\begin{equation}
+P=\lambda_{1}A+\lambda_{2}B+\lambda_{3}C\label{eq:bary1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\textrm{{with}}\quad\lambda_{1}+\lambda_{2}+\lambda_{3}=1\label{bary2}
+\end{equation}
+
+\end_inset
+
+ 
+\begin_inset Formula $(\lambda_{1},\lambda_{2},\lambda_{3})$
+\end_inset
+
+ are the 
+\emph on
+barycentric coordinates
+\emph default
+ of point 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ According to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "barycentriccoords"
+literal "false"
+
+\end_inset
+
+, the barycentric coordinates have the following properties: 
+\end_layout
+
+\begin_layout Enumerate
+If the barycentric coordinates are all positive, point 
+\begin_inset Formula $P$
+\end_inset
+
+ lies inside the triangle;
+\end_layout
+
+\begin_layout Enumerate
+If any of the barycentric coordinates is 0, point 
+\begin_inset Formula $P$
+\end_inset
+
+ lies on one of the edges of the triangle;
+\end_layout
+
+\begin_layout Enumerate
+If any of the barycentric coordinates is negative, point 
+\begin_inset Formula $P$
+\end_inset
+
+ lies outside the triangle.
+\end_layout
+
+\begin_layout Standard
+Using these properties, we can check for an intersection between a point
+ 
+\begin_inset Formula $p$
+\end_inset
+
+ and a triangle.
+ Calculating for the barycentric coordinates requires solving a linear system.
+ Combining Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:bary1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "bary2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ we get:
+\begin_inset Formula 
+\begin{align}
+\lambda_{1}+\lambda_{2}+\lambda_{3}=1 & \Rightarrow\lambda_{1}=1-\lambda_{2}-\lambda_{3}\nonumber \\
+P & =\lambda_{1}A+\lambda_{2}B+\lambda_{3}C\nonumber \\
+ & =(1-\lambda_{2}-\lambda_{3})A+\lambda_{2}B+\lambda_{3}C\label{eq:}\\
+ & =A\lambda_{2}(B-A)+\lambda_{3}(C-A).\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the definition of 
+\begin_inset Formula $p$
+\end_inset
+
+ from Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pointonray"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we get the following equation:
+\begin_inset Formula 
+\begin{align}
+O+tDir & =A+\lambda_{2}(B-A)+\lambda_{3}(C-A)\\
+O-A & =-tDir+\lambda_{2}(B-A)+\lambda_{3}(C-A).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expanding the Equation 2.4 into three equations for each coordinates, we
+ get
+\begin_inset Formula 
+\begin{align*}
+tx_{Dir}+\lambda_{2}(x_{B}-x_{A})+\lambda_{3}(x_{C}-x_{A})= & x_{O}-x_{A}\\
+ty_{Dir}+\lambda_{2}(y_{B}-y_{A})+\lambda_{3}(y_{C}-y_{A})= & y_{O}-x_{A}\\
+tz_{Dir}+\lambda_{2}(z_{B}-z_{A})+\lambda_{3}(z_{C}-z_{A})= & z_{O}-z_{A},
+\end{align*}
+
+\end_inset
+
+which can also be expressed as a linear system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{ccc}
+x_{Dir} & (x_{B}-x_{A}) & (x_{C}-x_{A})\\
+y_{Dir} & (y_{B}-y_{A}) & (y_{C}-y_{A})\\
+z_{Dir} & (z_{B}-z_{A}) & (z_{C}-z_{A})
+\end{array}\right]\left[\begin{array}{c}
+t\\
+\lambda_{2}\\
+\lambda_{3}
+\end{array}\right]=\left[\begin{array}{c}
+x_{O}-x_{A}\\
+y_{O}-x_{A}\\
+z_{O}-z_{A}
+\end{array}\right].\label{eq:linsystem3d}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving this linear system will give us 2 of the 3 barycentric coordinates
+ and the distance 
+\begin_inset Formula $t$
+\end_inset
+
+ from the viewpoint, at which the ray intersects with the triangle.
+ Finding only 2 of the 3 barycentric coordinates is sufficient because the
+ sum of the barycentric coordinates are equal to 1, as shown in Equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "bary2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Using this property, we can find the third barycentric coordinate given
+ that 2 are known.
+ To solve this linear system efficiently, we can use
+\emph on
+ Cramer's rule.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Cramer's Rule 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cramer1750"
+literal "false"
+
+\end_inset
+
+:
+\emph default
+ Given a system of 
+\begin_inset Formula $n$
+\end_inset
+
+ linear equations for 
+\begin_inset Formula $n$
+\end_inset
+
+ unknowns represented as a matrix multiplication 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+, the solution 
+\begin_inset Formula $x=(x_{1},...,x_{n})^{T}$
+\end_inset
+
+is given by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{i}\frac{\det(A_{i})}{\det(A)}\quad\quad\quad i\text{=1,...,n},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ is the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ with its 
+\begin_inset Formula $i$
+\end_inset
+
+-th column replaced by the vector 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cramer1750"
+literal "false"
+
+\end_inset
+
+.
+ Using Cramer's rule, the solution to our linear system from Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:linsystem3d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is given as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+t= & \frac{\det((0-A)\quad(B-A)\quad(C-A))}{\det(Dir\quad(B-A)\quad(C-A))}\\
+\lambda_{2}= & \frac{\det(Dir\quad(0-A)\quad(C-A))}{\det(Dir\quad(B-A)\quad(C-A))}\\
+\lambda_{3}= & \frac{\det(Dir\quad(B-A)\quad(0-A))}{\det(Dir\quad(B-A)\quad(C-A))}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculating the determinant of a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix can also be done by calculating the cross and dot product of the
+ column vectors.
+ 
+\end_layout
+
+\begin_layout Standard
+Using this algorithm, we can find whether a ray intersects a triangle, as
+ well as the distance 
+\begin_inset Formula $t$
+\end_inset
+
+ between the viewpoint and the ray-intersection.
+ Finding the distance 
+\begin_inset Formula $t$
+\end_inset
+
+ is important, so that we know which object is closer to the viewpoint.
+ This algorithm can also be used to also check for ray-object intersection
+ of other geometries, as long as these geometries are constructed out of
+ triangles.
+ This representation of 3-dimensional structures using triangles is also
+ known as a 
+\emph on
+triangle mesh
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Creating-Triangle-Mesh"
+
+\end_inset
+
+Creating Triangle Mesh
+\end_layout
+
+\begin_layout Standard
+Creating a triangle mesh out of a complex geometrical structure is non-trivial.
+ The
+\emph on
+ marching cubes 
+\emph default
+algorithm introduced by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "marchingcubes"
+literal "false"
+
+\end_inset
+
+, which solves the problem of finding surface of discrete 3-dimensional
+ volumes.
+ This algorithm divides an input volume into a set of cubes, each cube defined
+ by its 8 vertices.
+ Each cube is then processed, and checked to see if it contains a section
+ of the input volume.
+ Then, an appropriate triangular mesh is generated, which approximates the
+ input volume of the section contained in the cube.
+ The triangular mesh are generated via look-up table, which consists of
+ all possible configurations for a triangle mesh in a cube.
+ The original marching cubes algorithm by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "marchingcubes"
+literal "false"
+
+\end_inset
+
+ gives 15 different possible configurations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/pasted2.png
+	lyxscale 25
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+15 configurations of triangle mesh in a cube 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "marchingcubes"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ambient Occlusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/3dao-1.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An rendering of ambient occlusion in a scene with 2 cubes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Ambient occlusion
+\emph default
+ is a shading technique that simulates shading that exists on surfaces,
+ even if the entire scene is well lit.
+ This shading technique does not take light sources into consideration,
+ but only other geometries in the scene.
+ Ambient occlusion is an approximation of global illumination.
+ It is much cheaper to compute the ambient occlusion values than to recursively
+ calculate the global illumination using ray tracing.
+ Ambient occlusion is usually rendered separately before being combined
+ with the normal ray-traced render of a scene.
+ Shading using ambient occlusion darkens the edges of different geometries.
+ This gives a clearer separation between different geometries in the scene.
+ 
+\end_layout
+
+\begin_layout Standard
+The occlusion value is obtained by integrating the visibility function 
+\begin_inset Formula $V(p,w)$
+\end_inset
+
+.
+ This function returns 1 should ray 
+\begin_inset Formula $(p,w)$
+\end_inset
+
+ not intersect with any object in the scene, and 0 otherwise.
+ Practically this intergral is computed using Monte-Carlo approximation.
+ This is done by 
+\emph on
+hemispheric sampling
+\emph default
+.
+ For each point 
+\begin_inset Formula $p$
+\end_inset
+
+ on the scene, a hemisphere 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ is constructed.
+ Rays are then shot from point 
+\begin_inset Formula $p$
+\end_inset
+
+ to points 
+\begin_inset Formula $w$
+\end_inset
+
+ in the hemisphere to check for intersection with objects in the scene.
+ This can also be written as the following function 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A(p,n)=\frac{1}{\pi}\intop_{w\in\Omega}V(p,w)|w\cdot n|dw
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $V(p,w)$
+\end_inset
+
+ is the visibility function.
+ The integral value is practically implemented using Monte-Carlo integration.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/ao-illust.png
+	lyxscale 25
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An illustration of ambient occlusion calculation on a point P on a surface.
+ Notice that the sampled rays are facing towards the same direction as the
+ surface normal.
+ None are pointing into the surface.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To sample points on a hemisphere 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, we can use the spherical coordinates, which describe a point 
+\begin_inset Formula $P\in\mathbb{{R}}^{3}$
+\end_inset
+
+ using two angles 
+\begin_inset Formula $\phi_{1}\in[0,2\pi]$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}\in[0,\pi]$
+\end_inset
+
+ with regard to a sphere 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ with a center point 
+\begin_inset Formula $c$
+\end_inset
+
+ and radius 
+\begin_inset Formula $r$
+\end_inset
+
+ as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p=\left[\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right]=\left[\begin{array}{c}
+c+r\cos(\phi_{1})\\
+c+r\sin(\phi_{1})\cos(\phi_{2})\\
+c+r\sin(\phi_{1})\sin(\phi_{2})
+\end{array}\right]
+\end{equation}
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "3dsphericalcoords"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using this spherical coordinates, we can sample points on a hemisphere by
+ selecting 2 random values for 
+\begin_inset Formula $\phi_{1}\in[0,2\pi]$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{2}\in[0,\pi]$
+\end_inset
+
+.
+ This will give us any random values on a sphere centered on our selected
+ point 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ However, this may result in many sampled rays pointing into the geometrical
+ structure, and not out of its surface and away from the structure.
+ To avoid this, the sampled rays need to be pointing at the same direction
+ as the surface normal.
+ The dot product of two vectors is positive, if the angle formed between
+ them is less than 
+\begin_inset Formula $90^{\circ}.$
+\end_inset
+
+ Using this property, the direction of the sampled ray can be verified by
+ calculating the dot product of the sampled ray and the surface normal,
+ and checking that this dot product is positive 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bar2018lineare"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Chapter
+\noindent
+Related Work
+\end_layout
+
+\begin_layout Standard
+There have been many research done in ambient occlusion, as well as visualizatio
+n of high-dimensional data.
+ This chapter presents related works regarding visualization of high-dimensional
+ data, specifically 4D visualization, as well as works in ambient occlusion.
+ Section 3.1 discusses various methods for calculating or approximating ambient
+ occlusion.
+ Section 3.2 discusses related works in visualization of high-dimensional
+ data.
+\end_layout
+
+\begin_layout Section
+Ambient Occlusion
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Screen Space Ambient Occlusion
+\series bold
+\emph default
+ 
+\series default
+(SSAO) was developed by Crytek and was used in the video game engine 
+\emph on
+CryEngine 2
+\emph default
+ in 2007, which was used in the video game 
+\emph on
+Crysis
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mittring2007"
+literal "false"
+
+\end_inset
+
+.
+ This variant of ambient occlusion is the first method that allows ambient
+ occlusion computation in real time.
+ Using SSAO in 
+\emph on
+Crysis
+\emph default
+ made its graphics noticably more realistic tha n other video games of its
+ time 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "haydencrytex"
+literal "false"
+
+\end_inset
+
+.
+ SSAO implements ambient occlusion as a pixel shader, and uses the scene's
+ depth buffer (z-buffer) to approximate the occlusion value on every pixel
+ on the screen.
+ This requires heavy sampling to create good results, which in this case
+ requires reading many textures for each pixel.
+ This is very costly and needs further optimization to perform well.
+ As SSAO computes the ambient occlusion values based only on pixels of the
+ final image, SSAO does not depend on scene complexity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arvi2018"
+literal "false"
+
+\end_inset
+
+.
+ This makes SSAO efficient with dynamic scenes.
+ Moreover, it can fully be implemented in the GPU to further accelerate
+ the calculation.
+ However, SSAO only takes the current visible scene into consideration.
+ Occlusion caused by objects that are currently not in the same frame are
+ not generated.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Screen space directional ambient occlusion
+\emph default
+ (SSDO) introduced in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ritschel2009ssdo"
+literal "false"
+
+\end_inset
+
+ extends the approximation introduced in SSAO and uses it not only to calculate
+ an occlusion value, but also to calculate directional shadows and indirect
+ color bleeding.
+ This is done by including one indirect bounce of ambient light into the
+ occlusion calculation.
+ The resulting image is more vibrant, as it includes ambient lightning in
+ the shadows.
+ An example of SSDO can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ssdoexample"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/pasted1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Results from SSAO (left) and SSDO (right).
+ Note the color in the shadows from SSDO, giving it a more realistic result
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ritschel2009ssdo"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "ssdoexample"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Real-time ambient occlusion using ray tracing (also known as 
+\emph on
+ray-traced ambient occlusion
+\emph default
+, RTAO) is only available since 2018, and was developed for use with Nvidia's
+ RTX platform, which allows for real-time ray tracing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "rtao"
+literal "false"
+
+\end_inset
+
+.
+ Using ray tracing to create ambient occlusion addresses the limitations
+ in SSAO, as ray tracing is not limited to only visible objects, but all
+ objects in a scene.
+ The results of RTAO is more correct than SSAO.
+ RTAO also produces higher quality images.
+\end_layout
+
+\begin_layout Section
+Visualization of High-Dimensional Data
+\end_layout
+
+\begin_layout Standard
+As our world is 3-dimensional, we cannot directly observe structures outside
+ of the 3-dimensional space.
+ This makes it difficult to visualize 4-dimensional structures.
+ Studies of the difficulties of 2-dimensional beings to understand the 3-dimensi
+onal structures gave us insights on how to understand and visualize 4-dimensiona
+l structures.
+\end_layout
+
+\begin_layout Standard
+The problem of viewing 4D structures was first explored in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "noll1967computer"
+literal "false"
+
+\end_inset
+
+.
+ Noll's solution to rendering 4D structures is by using wireframes with
+ perspective projection.
+ This visualization does not give a sufficient understanding to the viewer.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hollasch4d"
+literal "false"
+
+\end_inset
+
+ extends the wireframe method to include more visual cues, as well as introduces
+ ray tracing methods to visualize 4D structures.
+ 
+\end_layout
+
+\begin_layout Standard
+Another method of visualizing 4D space are by rendering hypersphere 
+\begin_inset Quotes eld
+\end_inset
+
+peels
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This resulted in good quality images of rotation in 4D space 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "banchoff1999interactive"
+literal "false"
+
+\end_inset
+
+.
+ 4D structures can also be visualized by producing 3-dimensional slices
+ of the structure.
+ This is based on the idea of how 2-dimensional beings would see 3-dimensional
+ structures.
+ This is presented in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "banchoff1999interactive"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+An approach which is also used in this thesis is to render 4D objects as
+ a 3D image.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "steiner1987hidden"
+literal "false"
+
+\end_inset
+
+ used scanplane conversion to project 4D objects to 3D voxel fields.
+ The resulting voxels are then rendered as semi-transparent so that the
+ projected 4D object is visible.
+\end_layout
+
+\begin_layout Chapter
+Method
+\end_layout
+
+\begin_layout Standard
+In this chapter we build on top of the rendering and shading algorithms
+ explained in chapter 2, extending them to work in a 4-dimensional space.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:4-Dimensional-Space"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ gives an explanation of 4-dimensional spaces.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ray-generation-to"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ discusses the projection of 4-dimensional scenes to a 3D image plane, and
+ how to generate camera rays.
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ray-Object-Intersection-in"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ extends the ray-triangle intersection to 4D.
+ Finally, Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Ambient-Occlusion-in"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ discusses the challenges of calculating ambient occlusion in a 4-dimensional
+ space, and the solution for each of these problems
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:4-Dimensional-Space"
+
+\end_inset
+
+4D Space
+\end_layout
+
+\begin_layout Standard
+The 4-dimensional space has 4 basis vectors which are orthogonal of one
+ another.
+ There is a one more rotational axis in a 4-dimensional space.
+ This makes the four-dimensional structures much more complex than their
+ 3-dimensional counterparts.
+ In the 4-dimensional space, each point 
+\begin_inset Formula $p$
+\end_inset
+
+ consists of 4 coordinates 
+\begin_inset Formula $p=(x,y,z,w)$
+\end_inset
+
+.
+ The fourth variable 
+\begin_inset Formula $w$
+\end_inset
+
+ is often interpreted to be time, but this is not necessarily the case.
+ 
+\end_layout
+
+\begin_layout Standard
+As previously discussed in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Ray-Object-Intersection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 3-dimensional structures are modelled using triangle mesh to solve the
+ problem of ray-object intersection.
+ This mesh only take the surface of a 3D structure into consideration.
+ Extending this to a 4-dimensional space, we can model 4-dimensional structures
+ using a mesh that only takes the 4D structure's surface into consideration.
+ Surfaces of 3-dimensional structures are 2-dimensional planes, and extending
+ this idea to a 4-dimensional structure, the surfaces of a 4-dimensional
+ structure are 3-dimensional volumes.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ray-generation-to"
+
+\end_inset
+
+Ray Generation to a 3D Image Plane
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/4d_raygeneration.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A 
+\begin_inset Formula $3\times3\times3$
+\end_inset
+
+ 3D image plane.
+ Notice that the blue ray is shooting through the center of voxel 
+\begin_inset Formula $(2,0,1)$
+\end_inset
+
+, and the red ray is shooting through the center of voxel 
+\begin_inset Formula $(2,2,2).$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To render an image in 4D we need to project the image to an image plane.
+ Whereas in 3D space, the image plane is a 2D plane, in the 4D case, the
+ image plane is a 3D image plane.
+ This means that the image plane is not flat, but has depth.
+ Analogous to the 3D case, we can create a pixel grid and project it on
+ this 3D image plane.
+ Instead of squares, each pixel is now mapped to a voxel in the 3D image
+ plane.
+ This means that each pixel value now includes a volumetric information.
+\end_layout
+
+\begin_layout Standard
+In the 3D case, we generate a ray by finding a point 
+\begin_inset Formula $s$
+\end_inset
+
+ on the image plane.
+ We do this by moving along the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ axes of the pixel coordinates and transforming the pixel coordinates into
+ camera coordinates.
+ In 4D, we need to also move along the 
+\begin_inset Formula $z$
+\end_inset
+
+ axes while we keep the w-coordinate constant.
+ The steps to finding a point 
+\begin_inset Formula $s$
+\end_inset
+
+ is otherwise similar to the 3D case: we first normalize all coordinates,
+ and offset them, as is explained in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Ray-Generation"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In 4D space, however, we need to do this also for the 
+\begin_inset Formula $z$
+\end_inset
+
+-coordinate.
+ Afterwards, we need to transform the point coordinates into screen space
+ coordinates.
+ Just like in the 3D case, the 
+\begin_inset Formula $x$
+\end_inset
+
+-coordinate is scaled to image's aspect ratio.
+ However, instead of negating the 
+\begin_inset Formula $y$
+\end_inset
+
+ coordinate like in the 3-dimensional case, it is the 
+\begin_inset Formula $z$
+\end_inset
+
+-coordinate that needs to be negated.
+\end_layout
+
+\begin_layout Standard
+The screen space coordinates of the ray directions also need to be transformed
+ into camera coordinates.
+ For the scope of this thesis, we only look at the case of a static camera
+ position.
+ Because the camera position is static, its position can be determined so
+ that the screen space coordinates of the ray directions are the same as
+ their camera coordinates.
+ This can be done by placing the camera at point (0, 0, 0, 1).
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ray-Object-Intersection-in"
+
+\end_inset
+
+Ray-Object Intersection in 4D
+\end_layout
+
+\begin_layout Standard
+Similarly to the 3-dimensional case, we also solve the problem of ray-object
+ intersection in 4-dimensional space by breaking the object into simpler
+ geometries.
+ In the 3-dimensional case, triangles are used, which is a 2-simplex.
+ Extending this idea to the 4-dimensional case, a 3-simplex, which is a
+ tetrahedron, is used instead.
+ As a tetrahedron is also simplex, we can calculate the barycentric coordinates
+ of a point with regards to a tetrahedron.
+ The representation of a point 
+\begin_inset Formula $P\in\mathbb{{R}}^{4}$
+\end_inset
+
+ in a barycentric coordinate system based on a tetrahedron with vertices
+ 
+\begin_inset Formula $A,B,C,D\in\mathbb{{R}}^{4}$
+\end_inset
+
+ is defined as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P=\lambda_{1}A+\lambda_{2}B+\lambda_{3}C+\lambda_{4}D\label{eq:4dbary}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\textrm{{with}}\quad\lambda_{1}+\lambda_{2}+\lambda_{3}+\lambda_{4}=1.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analogous to the steps we toook in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Ray-Object-Intersection"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we can combine the definition of 
+\begin_inset Formula $p$
+\end_inset
+
+ from Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pointonray"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ with Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4dbary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+O+tDir & =\lambda_{1}A+\lambda_{2}B+\lambda_{3}C+\lambda_{4}D\\
+ & =A(1-\lambda_{2}-\lambda_{3}-\lambda_{4})+\lambda_{2}B+\lambda_{3}C+\lambda_{4}D\\
+ & =A+\lambda_{2}(B-A)+\lambda_{3}(C-A)+\lambda_{4}(D-A)\\
+O-A & =-tDir+\lambda_{2}(B-A)+\lambda_{3}(C-A)+\lambda_{4}(D-A)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This gives us a similar linear system like in the 3-dimensional case, which
+ can also be solved using the Cramer's rule.
+ Since 
+\begin_inset Formula $O,Dir,A,B,C,D$
+\end_inset
+
+ are now points in a 4-dimensional case, consisting of 4 components 
+\begin_inset Formula $(x,y,z,w)$
+\end_inset
+
+.
+ This yields us 4
+\begin_inset Formula $\times$
+\end_inset
+
+4 matrices in our linear system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[\begin{array}{cccc}
+x_{Dir} & (x_{B}-x_{A}) & (x_{C}-x_{A}) & (x_{D}-x_{A})\\
+y_{Dir} & (y_{B}-y_{A}) & (y_{C}-y_{A}) & (y_{D}-x_{A})\\
+z_{Dir} & (z_{B}-z_{A}) & (z_{C}-z_{A}) & (z_{D}-x_{A})\\
+w_{Dir} & (w_{B}-w_{A}) & (w_{C}-w_{A}) & (w_{D}-x_{A})
+\end{array}\right]\left[\begin{array}{c}
+t\\
+\lambda_{2}\\
+\lambda_{3}\\
+\lambda_{4}
+\end{array}\right]=\left[\begin{array}{c}
+x_{O}-x_{A}\\
+y_{O}-x_{A}\\
+z_{O}-z_{A}\\
+w_{0}-w_{A}
+\end{array}\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution of this linear system is given as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+t= & \frac{\det((O-A)\quad(B-A)\quad(C-A))}{\det(Dir\quad(B-A)\quad(C-A)\quad(D-A))}\\
+\lambda_{2}= & \frac{\det(Dir\quad(O-A)\quad(C-A))}{\det(Dir\quad(B-A)\quad(C-A)\quad(D-A))}\\
+\lambda_{3}= & \frac{\det(Dir\quad(B-A)\quad(O-A))}{\det(Dir\quad(B-A)\quad(C-A)\quad(D-A))}\\
+\lambda_{4}= & \frac{\det(Dir\quad(B-A)\quad(C-A)\quad(O-A))}{\det(Dir\quad(B-A)\quad(C-A)\quad(D-A))}
+\end{align*}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Because we are now calculating the determinant of 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrices, we can no longer use the cross and dot products of the column
+ vectors to calculate the determinant.
+ However, since we only need to calculate the determinant of matrices with
+ a set number of columns and rows, the simplest solution is to use the Laplace
+ extension.
+ This reduces the calculation of a determinant into simple float multiplications
+, additions, and subtractions.
+ 
+\end_layout
+
+\begin_layout Standard
+Just like in the 3D case, we can use this algorithm to also calculate the
+ ray-object intersection of other, more complicated structures in 4D.
+ The prerequisite of this is to represent other structures in 4D as constructed
+ out of tetrahedra, thus creating a 
+\emph on
+tetrahedral mesh
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Ambient-Occlusion-in"
+
+\end_inset
+
+Ambient Occlusion in 4D
+\end_layout
+
+\begin_layout Standard
+To perform ambient occlusion in 4D, we need to solve hemispheric sampling
+ in 4D.
+ Furthermore, ambient occlusion in 4D differs from the 3D case in that the
+ ambient occlusion values are calculated for volumetic surfaces instead
+ of planar surfaces.
+ This section will present the approaches taken to solve these problems.
+\end_layout
+
+\begin_layout Standard
+The 4D equivalent of a sphere in 3D space is a 3-sphere, also known as a
+ hypersphere.
+ We can use the spherical coordinates as defined in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "3dsphericalcoords"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and extend this to 4D.
+ The generalized spherical coordinates for n-sphere is given as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p=\left[\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}\\
+\vdots\\
+x_{n-1}\\
+x_{n}
+\end{array}\right]=\left[\begin{array}{c}
+r\cos(\phi_{1})\\
+r\sin(\phi_{1})\cos(\phi_{2})\\
+r\sin(\phi_{1})\sin(\phi_{2})\cos(\phi_{3})\\
+\vdots\\
+r\sin(\phi_{1})\ldots\sin(\phi_{n-2})\cos(\phi_{n-1})\\
+r\sin(\phi_{1})\ldots\sin(\phi_{n-2})\sin(\phi_{n-1})
+\end{array}\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can then specifically define for the case 
+\begin_inset Formula $n=4$
+\end_inset
+
+ and a centerpoint 
+\begin_inset Formula $c$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p=\left[\begin{array}{c}
+x\\
+y\\
+z\\
+w
+\end{array}\right]=\left[\begin{array}{c}
+c+r\cos(\phi_{1})\\
+c+r\sin(\phi_{1})\cos(\phi_{2})\\
+c+r\sin(\phi_{1})\sin(\phi_{2})\cos(\phi_{3})\\
+c+r\sin(\phi_{1})\sin(\phi_{2})\sin(\phi_{3})
+\end{array}\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In compared to the 3D case, we now need one extra angle.
+ Similarly to the 3D case we need to make sure that the sampled points are
+ in the same direction as the the surface's normal vector.
+ 
+\end_layout
+
+\begin_layout Standard
+As the surfaces in 4D are made out of tetrahedron, the calculation for the
+ normal vector needs to be extended to 4D.
+ In the 3D case, the normal vector of a plane can be calculated by the cross
+ product of two vectors on said plane.
+ The cross product is not defined for 4D, however the cross product can
+ also be formulated as the formal determinant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\times b=\left|\begin{array}{ccc}
+x & y & z\\
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}
+\end{array}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using cofactor expansion on the first row, we will get the components of
+ the resulting vector, which is the same as the conventional methods to
+ calculate the cross product of two 3-dimensional vectors 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bar2018lineare"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We can extend this determinant into 4D space.
+ However, this is not a cross product in the conventional sense.
+ This is because this 
+\begin_inset Quotes eld
+\end_inset
+
+product
+\begin_inset Quotes erd
+\end_inset
+
+ is a product of 3 vectors instead of just 2.
+ It is not possible to find an orthogonal vector to only 2 vectors in 4-dimensio
+nal space as this will result in an unsolvable linear system.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a\times b\times c=\left|\begin{array}{cccc}
+x & y & z & w\\
+a_{1} & a_{2} & a_{3} & a_{4}\\
+b_{1} & b_{2} & b_{3} & b_{4}\\
+c_{1} & c_{2} & c_{3} & c_{4}
+\end{array}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving this determinant will result in a vector that is orthogonal to the
+ vectors 
+\begin_inset Formula $a,b,c$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Returning to the problem of finding a normal vector that is orthogonal to
+ the surface of a 4-dimensional structure, we need to find an orthogonal
+ vector to a volumetric surface.
+ To do this, we need to find 3 orthogonal vectors within this volume.
+ In the case of a tetrahedron 
+\begin_inset Formula $T=(v0,v1,v2,v3)$
+\end_inset
+
+, we can choose an anchor vector 
+\begin_inset Formula $v0$
+\end_inset
+
+ and select the edges from 
+\begin_inset Formula $v0$
+\end_inset
+
+ to the other 3 vectors 
+\begin_inset Formula $v1,v2,v3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+a & =(v1-v0)\\
+b & =(v2-v0)\\
+c & =(v3-v0)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is the direct extension of the 3D case.
+ In the 3D case, 2 edges on a triangle, which makes up the surfaces of 3D
+ structures in computer graphics, are used to find the surface normal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/tetranormal.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+3 edges needed for the calculations of a tetrahedron's normal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The variant of ambient occlusion implemented in this thesis is ray-traced
+ vertex-based ambient occlusion.
+ This method uses ray-tracing to calculate the occlusion values, and thus
+ takes the entire scene into consideration.
+ The occlusion values are calculated for each vertex in the scene.
+ The occlusion values are then averaged over a tetrahedron during rendering.
+\end_layout
+
+\begin_layout Section
+Evaluation Methods
+\end_layout
+
+\begin_layout Standard
+To evaluate the results of ambient occlusion in 4D, several comparisons
+ are made.
+ To provide ground truths for comparisons, the classical ambient occlusion
+ in 3D was rendered.
+ The variant ambient occlusion used for the 3D case is analogous to the
+ one used in 4D: a vertex-basesd, ray-traced ambient occlusion.
+ Because of hardware limitations, only simple scenes consisting of two geometrie
+s are rendered.
+ So that the results of ambient occlusion in 3D are comparable to the results
+ of ambient occlusion in 4D, the simple scenes used in 3D are then extended
+ into 4D.
+ This is also done because it is otherwise very difficult to create 4D meshes.
+ 
+\end_layout
+
+\begin_layout Standard
+Moreover, simple 4D scenes are rendered with and without ambient occlusion
+ to show the impact of ambient occlusion algorithms on 4D scenes.
+ Simple scenes in this case means that the scenes consist of structures
+ created by putting several tetrahedra together.
+ These structures do not represent any particular 3D structures.
+ The effects of ambient occlusion in 4D is observed by variating the sample
+ values.
+ The effects of the image plane's resolution, more specifically increasing
+ image plane's depth, is also observed.
+\end_layout
+
+\begin_layout Section
+Implementation Details
+\end_layout
+
+\begin_layout Standard
+The implementation of ambient occlusion in 4-dimensional space is done in
+ C++ using Visual Studio as the integraged development environment of choice.
+ As rendering 4-dimensional space is more computationally exepensive, the
+ need to accelerate the computation time rose.
+ To accelerate the computation time, OpenCL 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "opencl"
+literal "false"
+
+\end_inset
+
+ is used to provide a framework for parallel computing.
+ The OpenCL kernel is used to compute the ambient occlusion values for each
+ vertex in both the 3-dimensional case, as well as the 4-dimensional case.
+ 
+\end_layout
+
+\begin_layout Standard
+Even though the implementation is mainly written in C++, the OpenCL kernel
+ language is based on C, and is not compatible with structures from C++
+ , such as classes and vectors.
+ Thus, objects are instead implemented as C structs using native OpenCL
+ vector datatypes cl_float3 and cl_float4.
+\end_layout
+
+\begin_layout Standard
+The method used to render 4-dimensional space results in a 3D volume data.
+ This volume data need further processing so that it can be visualized.
+ The generated 3D volume data in this thesis is visualized using ParaView,
+ an open source scientific visualization tool 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "paraview"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Structures
+\end_layout
+
+\begin_layout Standard
+In this section, details are given for different structures used in the
+ implementation.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ray
+\series default
+ represents a ray in 3-dimensional space.
+ 
+\end_layout
+
+\begin_layout Itemize
+cl_float3 origin: the origin of the ray
+\end_layout
+
+\begin_layout Itemize
+cl_float3 dir: the direction of the ray
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Ray4 
+\series default
+represents a ray in 4-dimensional space.
+ Ray4 has the same attributes as Ray, but consists of 4-dimensional vectors
+ instead of 3-dimensional vectors.
+\end_layout
+
+\begin_layout Itemize
+cl_float4 origin: the origin of the ray
+\end_layout
+
+\begin_layout Itemize
+cl_float4 dir: the direction of the ray
+\end_layout
+
+\begin_layout Standard
+cl_float3 and cl_float4 are vector structures from OpenCL.
+ These are used so that the structures are compatible with OpeCL, and computatio
+ns can be parallelized.
+ This vector structure is also used for the vertices of the triangular and
+ tetrahedral mesh.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TriangleMesh
+\series default
+ contains information of all the geometries in a scene.
+ 
+\end_layout
+
+\begin_layout Itemize
+cl_float3 *vertices: an array that contains all vertices in a scene in a
+ 3-dimensional space
+\end_layout
+
+\begin_layout Itemize
+int face: the number of faces in the scene
+\end_layout
+
+\begin_layout Itemize
+int *vertIndex: a list indices that corresponds to the vertices array.
+ Each 3 indices belong to a triangle 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+TetraMesh
+\series default
+ contains information of all the geometries in a scene.
+ 
+\end_layout
+
+\begin_layout Itemize
+cl_float4 *vertices: an array that contains all vertices in a scene in a
+ 4-dimensional space
+\end_layout
+
+\begin_layout Itemize
+int vol: the number of volumes in a scene
+\end_layout
+
+\begin_layout Itemize
+int *vertIndex: a list indices that corresponds to the vertices array.
+ Each 4 indices belong to a tetrahedron.
+\end_layout
+
+\begin_layout Subsection
+Rendering a 4D Scene
+\end_layout
+
+\begin_layout Standard
+To render the 4-dimensional scene to a 3-dimensional image plane, we need
+ to create a way to traverse all the voxels in the 3-dimensional image plane.
+ The approach taken in this thesis is to save the values of this 3-dimensional
+ image plane in a simple 1-dimensional array the size of the image width
+ 
+\begin_inset Formula $\times$
+\end_inset
+
+ image height 
+\begin_inset Formula $\times$
+\end_inset
+
+ image depth.
+ We can go through this array, generate a camera ray, and assign each array
+ element with the appropriate RGB values according to the camera ray-object
+ intersection.
+ To generate a camera ray, we need to convert the index of a 1-dimensional
+ array to its corresponding pixel coordinate.
+ This can be done using simple module, division, and subtraction operations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ for (int i = 0; i < width * height * depth; i++){         
+\end_layout
+
+\begin_layout Plain Layout
+
+	int x = i % width;         
+\end_layout
+
+\begin_layout Plain Layout
+
+	int z = i / (width * height);         
+\end_layout
+
+\begin_layout Plain Layout
+
+	int y = (i - (z * width * height)) / width;
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+	//calculate camera ray
+\end_layout
+
+\begin_layout Plain Layout
+
+	//calculate RGB values
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Converting index of a 1-dimensional array to pixel coordinates
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "raytrace4dimpl"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This approach avoids using multiple nested for-loops, one for each dimension.
+ When using nested loops, the indices do not need to be converted into pixel
+ coordinates, as they are already in pixel coordinates.
+ However, the indices need to be converted into a 1-dimensional array index
+ afterwards.
+ Using a single loop and converting to pixel coordinates avoids complex
+ nested loops, and allows for simpler access to each voxel element.
+ This is beneficial, as rendering 4D scenes is already computationally heavy.
+\end_layout
+
+\begin_layout Subsection
+Computing Ambient Occlusion Value
+\end_layout
+
+\begin_layout Standard
+As this thesis aims to produce only static scenes as opposed to calculating
+ ambient occlusion in real time, ambient occlusion values can be pre-computed
+ before rendering the scene and saved as a scalar value for each vertices
+ in the scene.
+ The ambient occlusion values can be stored in a simple array similar to
+ how vertices are saved in a mesh.
+ This array can be easily saved as a binary file.
+ Measures are taken to ensure that the index of the vertex and its corresponding
+ ambient occlusion value are kept the same, so that the right ambient occlusion
+ value is assigned to the right vertex when reading the ambient occlusion
+ values.
+\end_layout
+
+\begin_layout Standard
+The ambient occlusion value is a scalar value saved as a float.
+ To render this, the ambient occlusion value is multiplied by the triple
+ 
+\begin_inset Formula $(1,1,1)$
+\end_inset
+
+ to convert this scalar value into pixel RGB values.
+ This creates an RGB value with equal value for all components.
+ This produces a gray color, which is appropriate for shadows (occlusion)
+ that are generated by ambient occlusion.
+ 
+\end_layout
+
+\begin_layout Standard
+The ambient occlusion values are saved for each vertex in the scene; however,
+ rendering does not render each vertex of a scene, but the surfaces at ray
+ intersection points.
+ To evaluate the ambient occlusion value of this surface, the ambient occlusion
+ value of its vertices are averaged.
+ This means that for each tetrahedron, the ambient occlusion value is the
+ average ambient occlusion value of its vertices.
+\end_layout
+
+\begin_layout Subsection
+Exporting 4D Renders to ParaView
+\end_layout
+
+\begin_layout Standard
+The resulting 3-dimensional image plane is saved as an array of 3-dimensional
+ float vector representing the RGB values of each voxel.
+ This array is then exported into a binary .RAW file, which can be read into
+ ParaView using the ImageReader.
+ To render the images correctly, the data scalar type should be set to float
+ with data byte order LittleEndian.
+ As the color of each voxel is saved as RGB triples, the scalar components
+ should be set to 3.
+ The image is then converted into volume data, so that the resulting 3D
+ image can be throughly inspected.
+ For clarity.
+ the images are rendered against a white background.
+ Because the background is not part of the scene, there should not be any
+ ambient occlusion caused by the background and the test structures.
+ There should only be occlusion caused by the test structures themselves.
+ Any shadows created against the background should thus be attributed to
+ ParaView's rendering engine, and not as the result of ambient occlusion
+ calculations.
+ As this thesis is only concerned with shadows and occlusion, the images
+ are rendered in black and white, based on their occlusion values, white
+ representing an area with no occlusion, and black representing an area
+ with high occlusion value.
+ This allows for an intuitive understanding of the resulting images.
+ 
+\end_layout
+
+\begin_layout Chapter
+Results
+\end_layout
+
+\begin_layout Standard
+This chapter presents the implementation details, as well as experimental
+ results.
+ Section 4.1 details the different frameworks, structures, and functions
+ used in the implementation.
+ Section 4.2 then presents the results of ambient occlusion in the 4-dimensional
+ space, and provide a comparison with ambient occlusion in the 3-dimensional
+ space.
+\end_layout
+
+\begin_layout Section
+Experimental Results
+\end_layout
+
+\begin_layout Standard
+To verify the correctness of the ambient occlusion implementation in 4D,
+ a simple 4D scene with 2 tetrahedra was rendered.
+ This scene was projected to a 
+\begin_inset Formula $50\times50\times2$
+\end_inset
+
+ 3D image plane.
+ A low resolution was used for this initial test so that fixes can quickly
+ be made in the implementation.
+ The result can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:A-simple-scene"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ As this image plane had only a depth of 2, the image is almost flat.
+ The result of ambient occlusion can be seen in the smaller tetrahedron
+ that is occluded by ambient occlusion.
+ It is worthy of note that the tetrahedron on this projection is entirely
+ occluded - this is not the expected result of ambient occlusion.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/test_noao_lowz2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+without ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/test_ao_lowz2.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+with ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:A-simple-scene"
+
+\end_inset
+
+A simple scene in 4D with 2 tetrahedra, projected to a 
+\begin_inset Formula $300\times300\times2$
+\end_inset
+
+ 3D image plane 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The next step is to increase the resolution of the image plane.
+ The same image is once again rendered, but this time to a 
+\begin_inset Formula $50\times50\times50$
+\end_inset
+
+ image plane.
+ In a higher resolution with regards to the image depth, we can get a better
+ understanding of the volume of the two tetrahedra.
+ Here we can see that the smaller tetrahedron is also entirely occluded,
+ like in the lower resolution result from Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:A-simple-scene"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ The gray values visible in the resulting images are created by ParaView's
+ rendering engine.
+ This does not reflect the calculated ambient occlusion values.
+ This includes the sections of the structures that have become transparent
+ after ambient occlusion is applied.
+ In these cases the ambient occlusion value is 1, the maximum possible value.
+ This means that this section has been entirely occluded.
+ Taking a slice of the scene with ambient occlusion, we can see that the
+ smaller tetrahedron is entirely occluded despite it being rendered as semi-tran
+sparent in ParaView.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testa/1.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+without ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testa/2.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+with ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "testa"
+
+\end_inset
+
+A simple scene in 4D with 2 tetrahedra, projected to a 
+\begin_inset Formula $50\times50\times50$
+\end_inset
+
+ 3D image plane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ambient occlusion is applied to another scene.
+ In this 4-dimensional scene, two separate geometries, each consisting of
+ two tetrahedra, are rendered with and without ambient occlusion.
+ Again, we see that the left object is entirely occluded, becoming more
+ like a shadow, whereas the right is not.
+ This 4-dimensional structure has a convex side and a concave side.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testb/1.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+without ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testb/2.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+with ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "testb"
+
+\end_inset
+
+A simple scene in 4D with 2 tetrahedra, projected to a 
+\begin_inset Formula $50\times50\times50$
+\end_inset
+
+ 3D image plane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another test scene is also rendered with two cubical geometries with a cut
+ that extends along the fourth axis, the 
+\begin_inset Formula $w$
+\end_inset
+
+-axis.
+ Like the previous structures, these structures also have concave and convex
+ sides when rendered to a 3D image plane.
+ As with the other two test scenes rendered, ambient occlusion seems to
+ affect the structure on the left more than the structure on the right.
+ Similar to the first test scene of two tetrahedra (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:A-simple-scene"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), the left structure have also been entirely occluded, which causes ParaView
+ to render it with transparency.
+ However, one tetrahedron of this structure remained opaque.
+ This includes a convex geometry, which have the expected high ambient occlusioi
+n value, as it is surrounded by other surfaces.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testc/1.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+without ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Graphics
+	filename images/testc/2.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+with ambient occlusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset CommandInset label
+LatexCommand label
+name "testc"
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A simple scene in 4D with 2 tetrahedra, projected to a 
+\begin_inset Formula $50\times50\times50$
+\end_inset
+
+ 3D image plane
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is not the expected outcome of ambient occlusion in a 4-dimensional
+ space.
+ Ambient occlusion should be consistently affecting all geometries in a
+ scene.
+ Thus, if one object becomes more transparent, other objects in the scene
+ should also become more transparent.
+ Moreover, ambient occlusion should not occlude an entire structure.
+ 
+\end_layout
+
+\begin_layout Section
+Theoretical Results
+\end_layout
+
+\begin_layout Standard
+In this section, the experimental results of ambient occlusion in 4D are
+ presented.
+ To validate the methods of ambient occlusion in 4D, a comparison with the
+ classical ambient occlusion in 3D is given.
+ Equivalent geometries are rendered in 3D and 4D so that the results are
+ comparable.
+ 
+\end_layout
+
+\begin_layout Standard
+The expected results of ambient occlusion should more resemble the ambient
+ occlusion in 3D space.
+ If we take a simple example of ambient occlusion in 3D space of two cubes,
+ we see that only the edges of the cube are occluded, as pictured in Figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "3dcubes"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ In this example, a floor was also rendered as part of the scene.
+ This creates a shadow between the two cubes.
+ We also see that the front sides of the cubes are a little bit occluded
+ because of the floor, creating a gradient on the cubes' faces.
+ This shows us that ambient occlusion should result in a larger variance
+ of values.
+ The experimental results of ambient occlusion in 4D space do not have this
+ characteristic gray values and gradients.
+ Surfaces are either entirely occluded, or not occluded.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/3dao-1.jpg
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "3dcubes"
+
+\end_inset
+
+Ambient occlusion of 2 cubes in 3D
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To look at what possible ambient occlusion results in 4D, we can take a
+ look at each examples and theoretically analyze them.
+ Starting with the simples example of 2 tetrahedra in a scene, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "construct_ex1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the construction of the scene.
+ One tetrahedron is marked blue, and the other red.
+ We see here, that the red tetrahedron extends beyond the image plane.
+ Intuitively, we can conclude thata vertices 1, 2, and 3 should have the
+ highest ambient occlusion values.
+ Vertices 4,7, and 5 should have the highest ambient occlusion values.
+ The ambient occlusion values of vertices 0 and 6 should be somewhere in
+ the middle.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/testa/1_verts.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "construct_ex1"
+
+\end_inset
+
+Construction of the scene from Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:A-simple-scene"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This means, the average ambient occlusion value of the blue tetrahedron
+ should be high, resulting it being more occluded than the red tetrahedron.
+ Because of the ambient occlusion value of vertex 6, the red tetrahedron
+ should also be slilghtly occluded.
+ The experimental results fullfills the expectation that the blue tetrahedron
+ should be more occluded than the red tetrahedron, however, it should not
+ be entirely occluded like in the experimental result, as vertex 0 does
+ not have a high occlusion value.
+ Moreover, the red tetrahedron should actually also be occluded, unlike
+ in the experimental result, which does not occlude the red tetrahedron
+ at all.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/testa/1_man.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Expected results of 4D ambient occlusion on caluclated manually
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can apply this analysis to the other examples as well.
+ This is the scene with two structures created out of two tetrahedra.
+ The construction of this scene is pictured in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "const"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Here we see the two different tetrahedra that makes up the two structures:
+ a red tetrahedron and a blue tetrahedron.
+ We see here that the red tetrahedron extends beyond the image plane and
+ thus cut off.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/B.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "const"
+
+\end_inset
+
+Construction of the scene from Figure 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intuitively, we see that the vertices 1, 3, 8, and 10 should have the highest
+ ambient occlusion values.
+ Because the ambient occlusion value of a tetrahedron is the average of
+ the value of its vertices, we can determine the ambient occlusion value
+ of each tetrahedron.
+ As the vertices 1, 3, 8, and 10 belong to the blue tetrahedron, they should
+ have a higher ambient occlusion value, making them darker.
+ In contrast, the red tetrahedra each only contains one vertex with high
+ ambient occlusion value.
+ This should make the red tetrahedron have a higher average ambient occlusion
+ value, making them lilghter.
+ This theoretical result can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Expected-results-of"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/testb/theory.png
+	lyxscale 25
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Expected-results-of"
+
+\end_inset
+
+Expected results of 4D ambient occlusion caluclated manually
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see, this theoretical analysis gives the opposite result when
+ compared to the experimental result.
+ None of the tetrahedron is entirely occluded, and both tetrahedra are equally
+ affected by ambient occlusion.
+ In compared to 3D ambient occlusion, we can see that ambient occlusion
+ in 4D takes volume surfaces into consideration, not planar surfaces as
+ in the case in 3D space.
+ This means, occlusion occurs in volumes.
+ A section of a volume can be occluded in 4D.
+ 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+It is possible to extend ambient occlusion algorithm into 4D, however, the
+ experimental results are different from the expected results when compared
+ with the results of ambient occlusion in 3D.
+ In the experimetal results, tetrahedra are either entirely occluded, or
+ not at all, which is uncharacteristic of ambient occlusion.
+ Thus, a theoretical result is also presented, which shows the possible
+ results of ambient occlusion in 4D.
+ 
+\end_layout
+
+\begin_layout Standard
+However, even the theoretical result does not fully show the results of
+ ambient occlusion in 4D.
+ The examples given in this thesis show the results of ambient occlusion
+ of possible tetrahedral mesh.
+ However, the tetrahedral mesh does not represent the surfaces of any 4D
+ structures, as it does not enclose a 4D structure.
+ As such, characteristics of ambient occlusion in 4D space cannot be fully
+ observed.
+\end_layout
+
+\begin_layout Standard
+To fully understand the effects of ambient occlusion in 4D structures, a
+ tetrahedral mesh that represents the surface of 4D structures is needed.
+ Finding this tetrahedral mesh is non-trivial, as 4D structures are already
+ complex and difficult to visualize.
+ In the 3D case, 
+\emph on
+marching cubes
+\emph default
+ can be used to find the surface of discrete volumes, as discussed in Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Creating-Triangle-Mesh"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+An extension of the marching cubes algorithm in higher dimensions was introduced
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhaniramka2000isosurfacing"
+literal "false"
+
+\end_inset
+
+.
+ The extended marching cubes algorithm by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhaniramka2000isosurfacing"
+literal "false"
+
+\end_inset
+
+ generates a 
+\begin_inset Formula $d$
+\end_inset
+
+-simplex mesh for dimensions 
+\begin_inset Formula $d\ge3$
+\end_inset
+
+.
+ Instead of using cubes, this algorithm uses hypercubes.
+ The size of the look-up table is defined as 
+\begin_inset Formula $2^{2^{d}}$
+\end_inset
+
+, with 
+\begin_inset Formula $d$
+\end_inset
+
+ being the desired dimensions.
+ In 4D, this implementation takes 4D functions which represents 4D structures,
+ and generates the tetrahedral mesh which represents the surface of the
+ input function.
+ As the proposed algorithm aims to work not with a specific dimension 
+\begin_inset Formula $d$
+\end_inset
+
+, but for all 
+\begin_inset Formula $d\ge3$
+\end_inset
+
+, the look-up table was not provided.
+ Using this algorithm to generate tetrahedral meshes would require that
+ the look-up table is first calculated, which is also non-trivial.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhaniramka2000isosurfacing"
+literal "false"
+
+\end_inset
+
+ developed a convex-hull-based algorithm to generate the look-up table using
+ hypercubes in higher dimensions.
+ The implementation of this algorithm in C++ is provided on this 
+\begin_inset CommandInset href
+LatexCommand href
+name "website"
+target "http://web.cse.ohio-state.edu/research/graphics/isotable/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Since this method uses a look-up table the size of 
+\begin_inset Formula $2^{2^{d}}$
+\end_inset
+
+, the look-up table is considerable larger than what is used in the original
+ marching cubes algorithm, and scales exponentially with the dimension.
+ Even for the 3D case 
+\begin_inset Formula $d=3$
+\end_inset
+
+, which would already require a table the size of 
+\begin_inset Formula $2^{8}$
+\end_inset
+
+.
+ In the case of 4D, the required size of the look-up table is then 
+\begin_inset Formula $2^{16}.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Moreover, it is not easy to integrate the extended marching cubes implementation
+ with the ambient occlusion implementation in C++ and OpenCL.
+ As previously stated, OpenCL is based on C, and not C++.
+ Class structures which are available in C++ are not compatible with OpenCL.
+ The low-level implementation of OpenCL is also hardware dependant.
+ This means, the way OpenCL behave may change depending on the hardware.
+ On the hardware used in this thesis, OpenCL is very limited.
+ Writing comments in the OpenCL kernel code resulted in compilation error.
+ This made reading and debugging the OpenCL code more difficult.
+\end_layout
+
+\begin_layout Standard
+Because the complexities of marching cubes is beyond the scope of this thesis,
+ it was not implemented.
+ However, using the marching cubes to obtain good test data would be very
+ beneficial in verifying the proposed algorithm of ambient occlusion in
+ 4D, as well as in analyzing the characteristics of ambient occlusion in
+ 4D.
+ A tetrahedral mesh generated using the marching cubes algorithm represents
+ a 4D structure.
+ A generated mesh is also larger, giving more context to occluded tetrahedra.
+ 
+\end_layout
+
+\begin_layout Standard
+Another approach to analyzing the characteristics of ambient occlusion in
+ 4D would be to use different projection methods.
+ In this thesis, only the perspective projection method was used.
+ However, other methods of projection exists in computer graphics, such
+ as the parallel projection.
+ In this projection, rendering rays are not generated from one viewpoint,
+ but from a viewing plane.
+ Straight rays are generated from the viewing plane to the image plane.
+ Parallel projection eliminates the distortioin created by perspective projectio
+n, which scales and skews objects based on its distance to the viewpoint.
+ Using parallel projection could a provide a result that can be easier to
+ understand intuitively.
+ 
+\end_layout
+
+\begin_layout Chapter
+Conclusion
+\end_layout
+
+\begin_layout Standard
+The main goal of this thesis is to extend preexisting ambient occlusion
+ algorithm into 4D space so that ambient occlusion can also be used in the
+ visualization of 4D data.
+ The approach taken is to directly extend the algorithm mathematically into
+ 4D space.
+ The resulting algorithm is vertex based ambient occlusion in 4D space that
+ calculates the occlusion values using ray tracing.
+ 
+\end_layout
+
+\begin_layout Standard
+An implementation of this algorithm in C++ and OpenCL is introduced.
+ This implementation produces raw binary 3D images which can be rendered
+ using ParaView for further analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+This implementation is then tested using simple tetrahedral structures.
+ The results of the implementation do not comply to the expected results
+ of ambient occlusion in 4D space, so theoretical results are also given
+ to provide an understanding of how ambient occlusion behaves in 4D space.
+ The theoretical results show that ambient occlusion in 4D space gives a
+ similar result in compared to ambient occlusion in 3D space.
+ In contrast to 3D space, which has 2D surfaces, 4D space has 3D surfaces.
+ This results in ambient occlusion in 4D space occluding entire volumes,
+ not just planar surfaces.
+\end_layout
+
+\begin_layout Standard
+As previously discussed, the experimental tests in this thesis are still
+ insufficient to fully observe and understand the characteristics of ambient
+ occlusion in 4D space.
+ To fully understand the effects of ambient occlusion in 4D space, more
+ testing using tetrahedral meshes of 4D structures is necessary.
+ 
+\end_layout
+
+\begin_layout Standard
+Another possible extension to this thesis is to optimize the hemispheric
+ sampling process.
+ The selection of angles can narrowed down further, so that the generated
+ rays are are more efficiently selected, improving the calculation time.
+\end_layout
+
+\begin_layout Standard
+Further works can also explore other possibilities of improving visualization
+ of 4D data using other methods availabe in 3D space.
+ This thesis focuses only in shading methods, however, adding a specular
+ element to a rendered image also improves the quality of the rendered image
+ and gives a better understanding of the surface texture.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "ref"
+options "bibtotoc,apalike2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
